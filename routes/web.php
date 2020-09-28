@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Consejo;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//rutas de la navegacion
 Route::get('/', function () {
-    return view('home');
+
+    $consejos = DB::table('consejos')
+        ->orderBy('id','desc')
+        ->get();
+
+    return view('home', compact('consejos'));
 });
 
 Route::get('/consejos', function () {
 
-    return view('consejos');
+    $consejos = DB::table('consejos')
+        ->orderBy('id','desc')
+        ->get();
+
+    return view('consejos', compact('consejos'));
 });
 
 Route::get('/sobre-nosotros', function () {
@@ -30,3 +41,11 @@ Route::get('/cursos', function () {
     return view('cursos');
 });
 
+
+//cada consejo
+Route::get('/consejo/{id}', function ($id) {
+
+    $consejo = Consejo::find($id);
+
+    return view('consejo', compact('consejo'));
+});

@@ -82,24 +82,24 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" id="barra-navegacion">
-        <a class="navbar-brand" href="#"></a>
-        <img src="images/sin-fondo.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo">
+        <a class="navbar-brand" href="{{ url('/') }}"></a>
+        <img src="../images/sin-fondo.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <h5><a class="nav-link active" href="index.html">Inicio</a></h5>
+                    <h5><a class="nav-link active" href="{{ url('/') }}">Inicio</a></h5>
                 </li>
                 <li class="nav-item">
-                    <h5><a class="nav-link active" href="consejos.html">Consejos Y Tips</a></h5>
+                    <h5><a class="nav-link active" href="{{ url('/consejos') }}">Consejos Y Tips</a></h5>
                 </li>
                 <li class="nav-item">
                     <h5><a class="nav-link active" href="#">Cursos</a></h5>
                 </li>
                 <li class="nav-item">
-                    <h5><a class="nav-link active" href="sobre-nosotros.html">Sobre Nosotros</a></h5>
+                    <h5><a class="nav-link active" href="{{ url('/sobre-nosotros') }}">Sobre Nosotros</a></h5>
                 </li>
             </ul>
         </div>
@@ -143,7 +143,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2 contenedorFooter">
-                <img src="images/logo-footer.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo-footer" />
+                <img src="../images/logo-footer.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo-footer" />
             <div>
                 <strong>Suscribite a nuestro newsletter</strong><br /><br />
                 <form class="form-inline">
@@ -153,10 +153,9 @@
             </div>
             <br />
             <div id="redes" class="row">
-                <div class="col-2"><a href="https://www.facebook.com/Eventos-y-Protocolo-MI-107526524382764"><img class="rounded-circle" src="images/face.png" alt="logo facebook"></a></div>
+                <div class="col-2"><a href="https://www.facebook.com/Eventos-y-Protocolo-MI-107526524382764"><img class="rounded-circle" src="../images/face.png" alt="logo facebook"></a></div>
                 <div class="col-2"><a href="#"><img class="rounded-circle" src="images/gmail.png" alt="logo gmail"></a></div>
-                <div class="col-2"><a href="#"><img class="rounded-circle" src="images/twitter.png" alt="logo twitter"></a></div>
-                <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="rounded-circle" src="images/instagram.png" alt="logo instagram"></a></div>
+                <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="rounded-circle" src="../images/instagram.png" alt="logo instagram"></a></div>
             </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 contenedorFooter">
