@@ -115,7 +115,8 @@
         </div>
         <div id="form-buscar" class="col-md-4">
             <br />
-            <form class="form-inline my-2 my-lg-0" id="mi-form-busqueda" method="post" action="#">
+            <form class="form-inline my-2 my-lg-0" id="mi-form-busqueda" method="post" action="{{ url('/busqueda') }}">
+            @csrf
                 <input name="buscar" class="form-control mr-sm-2 buscar" type="search" placeholder="Buscar tips..." aria-label="Search" required />
                 <button class="btn btn-light" type="submit">Buscar</button>
             </form>

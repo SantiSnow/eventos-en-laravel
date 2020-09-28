@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Consejo;
+use App\Http\Controllers\busquedaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,6 @@ Route::get('/consejo/{id}', function ($id) {
 
     return view('consejo', compact('consejo'));
 });
+
+//busqueda de consejos
+Route::post('/busqueda', [busquedaController::Class, 'buscarConsejo']);
