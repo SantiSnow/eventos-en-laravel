@@ -96,7 +96,7 @@
                     <h5><a class="nav-link active" href="{{ url('/consejos') }}">Consejos Y Tips</a></h5>
                 </li>
                 <li class="nav-item">
-                    <h5><a class="nav-link active" href="#">Cursos</a></h5>
+                    <h5><a class="nav-link active" href="{{ url('/cursos') }}">Cursos</a></h5>
                 </li>
                 <li class="nav-item">
                     <h5><a class="nav-link active" href="{{ url('/sobre-nosotros') }}">Sobre Nosotros</a></h5>
