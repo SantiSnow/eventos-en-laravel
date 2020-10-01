@@ -161,17 +161,17 @@
             </div>
             <div class="col-lg-4 col-md-6 col-12 contenedorFooter">
                 <h2 class="footerTitulos">Secciones</h2>
-                    <a href="#"><p>Consejos y Tips</p></a>
-                    <a href="#"><p>Cursos</p></a>
-                    <a href="#"><p>¿Como me anoto?</p></a>
-                    <a href="#"><p>Sobre Nosotros</p></a>
+                    <a href="{{ url('/consejos') }}"><p>Consejos y Tips</p></a>
+                    <a href="{{ url('/cursos') }}"><p>Cursos</p></a>
+                    <a href="{{ url('/info-cursos') }}"><p>¿Cómo me anoto?</p></a>
+                    <a href="{{ url('/sobre-nosotros') }}"><p>Sobre Nosotros</p></a>
             </div>
             <div class="col-lg-4 col-12 contenedorFooter">
             <h2 class="footerTitulos">Contacto:</h2>
-                <a href="#"><p>¿Cómo abonar los cursos?</p></a>
-                <a href="#"><p>Información sobre los cursos</p></a>
-                <a href="#"><p>Contactanos</p></a>
-                <a href="#"><p>Ayuda</p></a>
+                <a href="{{ url('/info-cursos') }}"><p>¿Cómo abonar los cursos?</p></a>
+                <a href="{{ url('/info-cursos') }}"><p>Información sobre los cursos</p></a>
+                <a href="{{ url('/contacto') }}"><p>Contactanos</p></a>
+                <a href="{{ url('/info-cursos') }}"><p>Ayuda</p></a>
             <h4 class="footerTitulos">Creado por:</h4>
                 <p>CI - Software</p>
             </div>

@@ -42,6 +42,11 @@ Route::get('/cursos', function () {
     return view('cursos');
 });
 
+Route::get('/info-cursos', function () {
+    return view('informacion');
+});
+
+
 
 //cada consejo
 Route::get('/consejo/{id}', function ($id) {
