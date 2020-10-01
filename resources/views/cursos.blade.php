@@ -18,7 +18,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Curso de Organización de Eventos Integral</h5>
                     <p class="card-text">¡Aprende a organizar todo tipo de eventos paso a paso!</p>
-                    <a href="#" class="card-link">Enterate como...</a>
+                    <a href="{{ url('/info-cursos') }}" class="card-link">Enterate como...</a>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Curso de Ceremonial y Protocolo</h5>
                     <p class="card-text">Sumergite en esta hermosa profesión y capacitate para ejercer como ceremonialista</p>
-                    <a href="#" class="card-link">Enterate como...</a>
+                    <a href="{{ url('/info-cursos') }}" class="card-link">Enterate como...</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Curso de Wedding Planner</h5>
                     <p class="card-text">Cómo organizar bodas paso a paso, tendencias, costumbres y tipos de bodas</p>
-                    <a href="#" class="card-link">Enterate como...</a>
+                    <a href="{{ url('/info-cursos') }}" class="card-link">Enterate como...</a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Curso de Organización de Eventos y Protocolo Empresarial</h5>
                     <p class="card-text">Aprende cómo llevar a cabo eventos empresariales y el protocolo aplicable al ámbito empresarial</p>
-                    <a href="#" class="card-link">Enterate como...</a>
+                    <a href="{{ url('/info-cursos') }}" class="card-link">Enterate como...</a>
                 </div>
             </div>
         </div>

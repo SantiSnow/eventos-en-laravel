@@ -30,6 +30,7 @@
                 <div class="media-body">
                     <h4>{{ $i->nombre }}</h4>
                     <p>{{ $i->descripcion }}</p>
+                    <a class="btn btn-light" href="consejo/{{ $i->id }}">Leer más...</a>
                 </div>
             </div>
         </div>

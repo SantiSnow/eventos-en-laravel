@@ -145,17 +145,17 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 mb-md-0 mb-2 contenedorFooter">
                 <img src="../images/logo-footer.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo-footer" />
-            <div>
-                <strong>Suscribite a nuestro newsletter</strong><br /><br />
-                <form class="form-inline">
+                <div>
+                    <strong>¡Envianos tus consultas!</strong><br /><br />
+                    
                     <input id="envioCorreo1" class="form-control" type="email" placeholder="Correo Electronico" name="correo" id="correo" required />
-                    <button type="submit" id="envioCorreo" class="btn btn-light">Suscribite</button>
-                </form>
-            </div>
-            <br />
+                    <a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta" type="submit" id="envioCorreo" class="btn btn-light">Enviar</a>
+                    
+                </div>
+                <br />
             <div id="redes" class="row">
                 <div class="col-2"><a href="https://www.facebook.com/Eventos-y-Protocolo-MI-107526524382764"><img class="rounded-circle" src="../images/face.png" alt="logo facebook"></a></div>
-                <div class="col-2"><a href="#"><img class="rounded-circle" src="images/gmail.png" alt="logo gmail"></a></div>
+                <div class="col-2"><a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta"><img class="rounded-circle" src="images/gmail.png" alt="logo gmail"></a></div>
                 <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="rounded-circle" src="../images/instagram.png" alt="logo instagram"></a></div>
             </div>
             </div>
