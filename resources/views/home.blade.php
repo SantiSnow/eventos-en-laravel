@@ -6,9 +6,7 @@
     <title>Bienvenido a Eventos y Protocolo MI, el mejor sitio con consejos para organizadores de eventos y amantes del protocolo.</title>
     <style>
 
-        .card{
-            padding: 5px;
-        }
+
 
     </style>
 </head>
@@ -17,18 +15,20 @@
     @section("contenido")
 
     <div class="row">
-        
+
         @foreach($consejos as $i)
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">
-                <img src="../{{ $i->imagen }}" class="card-img-top" alt="Invitaciones, imagen descriptiva">
+                <img src="../{{ $i->imagen }}" class="card-img-top" alt="imagen descriptiva del tip">
                 <div class="card-body">
                     <h5 class="card-title">{{ $i->nombre }}</h5>
                     <p class="card-text">{{ $i->descripcion }}</p>
-                    <a href="consejo/{{ $i->id }}" class="btn btn-light">Leer más...</a>
+                    <a href="consejo/{{ $i->id }}" class="btn btn-outline-danger">Leer más...</a>
                 </div>
             </div>
         </div>
+
+
         @endforeach
 
     </div>
