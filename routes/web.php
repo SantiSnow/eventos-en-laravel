@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Consejo;
 use App\Http\Controllers\busquedaController;
+use App\Http\Controllers\correoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,8 @@ Route::get('/contacto', function () {
     return view('contacto');
 });
 
+//envio de correo
+Route::get('/mail-enviado', [correoController::class, 'correoEnviado']);
 
 
 //cada consejo
