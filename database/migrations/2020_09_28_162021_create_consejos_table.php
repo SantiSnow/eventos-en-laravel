@@ -19,7 +19,7 @@ class CreateConsejosTable extends Migration
             $table->string("descripcion");
             $table->text("contenido");
             $table->date("fecha");
-            $table->string("imagen")
+            $table->string("imagen");
             $table->timestamps();
         });
     }

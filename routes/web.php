@@ -18,18 +18,14 @@ use App\Http\Controllers\busquedaController;
 //rutas de la navegacion
 Route::get('/', function () {
 
-    $consejos = DB::table('consejos')
-        ->orderBy('id','desc')
-        ->get();
+    $consejos = Consejo::all()->take(6);
 
     return view('home', compact('consejos'));
 });
 
 Route::get('/consejos', function () {
 
-    $consejos = DB::table('consejos')
-        ->orderBy('id','desc')
-        ->get();
+    $consejos = Consejo::all();
 
     return view('consejos', compact('consejos'));
 });
