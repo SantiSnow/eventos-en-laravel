@@ -25,7 +25,7 @@
         }
 
         #barra-navegacion{
-            background-color: #ecc6c6;
+            background-color: #d49191;
         }
 
         #iso-logo{
@@ -60,7 +60,7 @@
         .rounded-circle{
             width: 100%;
         }
-        
+
         #envioCorreo1{
             margin: 2px;
         }
@@ -110,7 +110,7 @@
     <div class="row">
         <div class="col-md-8">
             <div class="justify-content">
-                <h2 id="titulo-sec">Eventos y Protocolo MI</h2>
+                <h2 id="titulo-sec">Eventos y Protocolo MilUno</h2>
             </div>
         </div>
         <div id="form-buscar" class="col-md-4">
@@ -123,7 +123,7 @@
         </div>
     </div>
 </div>
-        
+
 <br />
 <br />
 
@@ -131,7 +131,7 @@
 @yield("contenido")
 
 
-    
+
 </div>
 <br />
 <br />
@@ -147,10 +147,10 @@
                 <img src="../images/logo-footer.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo-footer" />
                 <div>
                     <strong>¡Envianos tus consultas!</strong><br /><br />
-                    
+
                     <input id="envioCorreo1" class="form-control" type="email" placeholder="Correo Electronico" name="correo" id="correo" required />
                     <a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta" type="submit" id="envioCorreo" class="btn btn-light">Enviar</a>
-                    
+
                 </div>
                 <br />
             <div id="redes" class="row">
