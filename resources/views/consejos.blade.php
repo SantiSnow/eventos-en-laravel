@@ -9,13 +9,15 @@
 
         .img-consj{
             width: 15%;
-            margin: 5px;
             border-radius: 3px;
+            margin-right: 20px;
         }
 
         .consejo-media{
             margin: 10px;
         }
+
+
     </style>
 </head>
 <body>
@@ -30,7 +32,7 @@
                 <div class="media-body">
                     <h4>{{ $i->nombre }}</h4>
                     <p>{{ $i->descripcion }}</p>
-                    <a class="btn btn-light" href="consejo/{{ $i->id }}">Leer más...</a>
+                    <a class="btn btn-outline-danger" href="consejo/{{ $i->id }}">Leer más...</a>
                 </div>
             </div>
         </div>

@@ -53,16 +53,12 @@
             width: 80%;
         }
 
-        .page-footer{
-            background-color: white;
-        }
-
-        .rounded-circle{
-            width: 100%;
+        .footer-circle-png{
+            width: 120%;
         }
 
         #envioCorreo1{
-            margin: 2px;
+            margin-bottom: 4px;
         }
 
         #iso-logo-footer{
@@ -76,6 +72,14 @@
 
         .card{
             margin: 5px;
+        }
+
+        .footer-links{
+            color: firebrick;
+        }
+
+        .footer-links:hover{
+            color: firebrick;
         }
 
     </style>
@@ -118,7 +122,7 @@
             <form class="form-inline my-2 my-lg-0" id="mi-form-busqueda" method="post" action="{{ url('/busqueda') }}">
             @csrf
                 <input name="buscar" class="form-control mr-sm-2 buscar" type="search" placeholder="Buscar tips..." aria-label="Search" required />
-                <button class="btn btn-light" type="submit">Buscar</button>
+                <button class="btn btn-outline-danger" type="submit">Buscar</button>
             </form>
         </div>
     </div>
@@ -149,35 +153,35 @@
                     <strong>¡Envianos tus consultas!</strong><br /><br />
 
                     <input id="envioCorreo1" class="form-control" type="email" placeholder="Correo Electronico" name="correo" id="correo" required />
-                    <a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta" type="submit" id="envioCorreo" class="btn btn-light">Enviar</a>
+                    <a href="mailto:mi.eventosyprotocolo@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta" type="submit" id="envioCorreo" class="btn btn-outline-danger">Enviar</a>
 
                 </div>
                 <br />
             <div id="redes" class="row">
-                <div class="col-2"><a href="https://www.facebook.com/Eventos-y-Protocolo-MI-107526524382764"><img class="rounded-circle" src="../images/face.png" alt="logo facebook"></a></div>
-                <div class="col-2"><a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta"><img class="rounded-circle" src="images/gmail.png" alt="logo gmail"></a></div>
-                <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="rounded-circle" src="../images/instagram.png" alt="logo instagram"></a></div>
+                <div class="col-2"><a href="https://www.facebook.com/Eventos-y-Protocolo-MI-107526524382764"><img class="footer-circle-png" src="../images/face.png" alt="logo facebook"></a></div>
+                <div class="col-2"><a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta"><img class="footer-circle-png" src="images/gmail.png" alt="logo gmail"></a></div>
+                <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="footer-circle-png" src="../images/instagram.png" alt="logo instagram"></a></div>
             </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 contenedorFooter">
                 <h2 class="footerTitulos">Secciones</h2>
-                    <a href="{{ url('/consejos') }}"><p>Consejos y Tips</p></a>
-                    <a href="{{ url('/cursos') }}"><p>Cursos</p></a>
-                    <a href="{{ url('/info-cursos') }}"><p>¿Cómo me anoto?</p></a>
-                    <a href="{{ url('/sobre-nosotros') }}"><p>Sobre Nosotros</p></a>
+                    <a class="footer-links" href="{{ url('/consejos') }}"><p>Consejos y Tips</p></a>
+                    <a class="footer-links" href="{{ url('/cursos') }}"><p>Cursos</p></a>
+                    <a class="footer-links" href="{{ url('/info-cursos') }}"><p>¿Cómo me anoto?</p></a>
+                    <a class="footer-links" href="{{ url('/sobre-nosotros') }}"><p>Sobre Nosotros</p></a>
             </div>
             <div class="col-lg-4 col-12 contenedorFooter">
             <h2 class="footerTitulos">Contacto:</h2>
-                <a href="{{ url('/info-cursos') }}"><p>¿Cómo abonar los cursos?</p></a>
-                <a href="{{ url('/info-cursos') }}"><p>Información sobre los cursos</p></a>
-                <a href="{{ url('/contacto') }}"><p>Contactanos</p></a>
-                <a href="{{ url('/info-cursos') }}"><p>Ayuda</p></a>
+                <a class="footer-links" href="{{ url('/info-cursos') }}"><p>¿Cómo abonar los cursos?</p></a>
+                <a class="footer-links" href="{{ url('/info-cursos') }}"><p>Información sobre los cursos</p></a>
+                <a class="footer-links" href="{{ url('/contacto') }}"><p>Contactanos</p></a>
+                <a class="footer-links" href="{{ url('/info-cursos') }}"><p>Ayuda</p></a>
             <h4 class="footerTitulos">Creado por:</h4>
                 <p>CI - Software</p>
             </div>
         </div>
     </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright: <a href="#"> CI Software</a></div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: <a href="#" class="footer-links"> CI Software</a></div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
