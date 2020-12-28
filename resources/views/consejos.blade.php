@@ -8,13 +8,24 @@
     <style>
 
         .img-consj{
-            width: 15%;
+            width: 20%;
             border-radius: 3px;
             margin-right: 20px;
+            
         }
 
         .consejo-media{
             margin: 10px;
+        }
+
+        .titulo-link{
+            text-decoration: none;
+            color: black;
+        }
+
+        .titulo-link:hover{
+            text-decoration: none;
+            color: black;
         }
 
 
@@ -30,7 +41,7 @@
             <div class="media">
                 <img src="../{{ $i->imagen }}" class="img-consj" alt="imagen invitaciones">
                 <div class="media-body">
-                    <h4>{{ $i->nombre }}</h4>
+                    <a class="titulo-link" href="consejo/{{ $i->id }}"><h4>{{ $i->nombre }}</h4></a>
                     <p>{{ $i->descripcion }}</p>
                     <a class="btn btn-outline-danger" href="consejo/{{ $i->id }}">Leer más...</a>
                 </div>
