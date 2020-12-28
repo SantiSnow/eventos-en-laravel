@@ -26,9 +26,15 @@
         <div class="col-md-8">
             <div class="justify-content">
                 <h4>Política de privacidad/política de cookies:</h4>
-                <p>No utilizamos cookies propias ni de terceros, no rastreamos información ni tampoco almacenamos datos en tu ordenador, por lo que no tenés que preocuparte por datos no deseeados
+                <p>No utilizamos cookies propias, no rastreamos información ni tampoco almacenamos datos en tu ordenador, por lo que no tenés que preocuparte por datos no deseeados
                     en esta página, ni tampoco sobre rastreo, mal uso de datos de los usuarios, phishing, estafas, fraude ni conducta ilegal o inapropiada de ningun tipo.
                 </p>
+                <p>Cookies de terceros: uso de Cookies de Laravel, Cookie Session de PHP que el framework de Laravel provee. Para conocer mas sobre esto puedes visitar el siguiente
+                 enlace:</p>
+                <a href="https://laravel.com/docs/8.x/session" class="btn btn-outline-danger">Leer más...</a>
+                <br />
+                <p>Las Cookies provistas por Laravel solo duran 2 horas y luego son eliminadas. Para desactivarlas, puedes ingresar a la configuración adicional de cookies de tu
+                navegador.</p>
                 <br />
                 <p>Creado por CI - Software, webmaster freelance.</p>
                 <br />
