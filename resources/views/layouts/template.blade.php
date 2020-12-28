@@ -82,12 +82,16 @@
             color: firebrick;
         }
 
+        #logo-nombre{
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" id="barra-navegacion">
-        <a class="navbar-brand" href="{{ url('/') }}"></a>
-        <img src="../images/sin-fondo.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo">
+        <img src="../images/nav-bar-isotipo.png" alt="logo Eventos y Protocolo MilUno" id="iso-logo">
+        <a class="navbar-brand" id="logo-nombre" href="{{ url('/') }}">Eventos y Protocolo MilUno</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,9 +117,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="justify-content">
-                <h2 id="titulo-sec">Eventos y Protocolo MilUno</h2>
-            </div>
+            
         </div>
         <div id="form-buscar" class="col-md-4">
             <br />
@@ -162,21 +164,21 @@
                 <div class="col-2"><a href="mailto:eventosyprotocolo.mi@gmail.com?Subject=Contacto%20Desde%20El%20Sitio%20Web-Consulta"><img class="footer-circle-png" src="images/gmail.png" alt="logo gmail"></a></div>
                 <div class="col-2"><a href="https://www.instagram.com/eventosyprotocolo_mi/"><img class="footer-circle-png" src="../images/instagram.png" alt="logo instagram"></a></div>
             </div>
-            </div>
+        </div>
             <div class="col-lg-4 col-md-6 col-12 contenedorFooter">
                 <h2 class="footerTitulos">Secciones</h2>
-                    <a class="footer-links" href="{{ url('/consejos') }}"><p>Consejos y Tips</p></a>
-                    <a class="footer-links" href="{{ url('/cursos') }}"><p>Cursos</p></a>
-                    <a class="footer-links" href="{{ url('/info-cursos') }}"><p>¿Cómo me anoto?</p></a>
-                    <a class="footer-links" href="{{ url('/sobre-nosotros') }}"><p>Sobre Nosotros</p></a>
+                <a class="footer-links" href="{{ url('/consejos') }}"><p>Consejos y Tips</p></a>
+                <a class="footer-links" href="{{ url('/cursos') }}"><p>Cursos</p></a>
+                <a class="footer-links" href="{{ url('/info-cursos') }}"><p>¿Cómo me anoto?</p></a>
+                <a class="footer-links" href="{{ url('/sobre-nosotros') }}"><p>Sobre Nosotros</p></a>
             </div>
             <div class="col-lg-4 col-12 contenedorFooter">
-            <h2 class="footerTitulos">Contacto:</h2>
+                <h2 class="footerTitulos">Contacto:</h2>
                 <a class="footer-links" href="{{ url('/info-cursos') }}"><p>¿Cómo abonar los cursos?</p></a>
                 <a class="footer-links" href="{{ url('/info-cursos') }}"><p>Información sobre los cursos</p></a>
                 <a class="footer-links" href="{{ url('/contacto') }}"><p>Contactanos</p></a>
                 <a class="footer-links" href="{{ url('/info-cursos') }}"><p>Ayuda</p></a>
-            <h4 class="footerTitulos">Creado por:</h4>
+                <h4 class="footerTitulos">Creado por:</h4>
                 <p>CI - Software</p>
             </div>
         </div>
